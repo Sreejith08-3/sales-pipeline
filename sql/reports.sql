@@ -11,3 +11,7 @@ FROM sales GROUP BY customer ORDER BY spend DESC LIMIT 3;
 -- Monthly revenue
 SELECT substr(order_date, 1, 7) AS month, ROUND(SUM(amount), 2) AS revenue
 FROM sales GROUP BY month ORDER BY month;
+
+-- Monthly revenue
+SELECT substr(order_date, 1, 7) AS month, ROUND(SUM(amount), 2) AS revenue
+FROM sales GROUP BY month ORDER BY month;
